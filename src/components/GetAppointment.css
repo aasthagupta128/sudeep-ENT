@@ -1,0 +1,39 @@
+.get-appointment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 30px;
+    flex-wrap: wrap;
+    background: #F14038;
+    /* box-shadow: -4px 4px 0px #C21C36; */
+    border-radius: 10px;
+}
+
+.get-appointment>p {
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.get-appointment>p#number {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 24px;
+}
+
+@media (max-width: 650px) {
+    .get-appointment>p,
+    .get-appointment>p#number {
+        padding: 0px;
+        font-size: 17px;
+    }
+    .get-appointment {
+        padding: 20px;
+    }
+}

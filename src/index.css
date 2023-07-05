@@ -1,0 +1,795 @@
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+    /* base styles */
+    
+     :root {
+        --header-height: 5rem;
+        --primary-color: #5ea9cc;
+        --seconday-color: #d4fefd;
+        --body-color: #ffffff;
+        --navbar-color: rgba(249, 249, 249, 0.822);
+        /* --appointment-card-color: rgba(241, 241, 241, 1); */
+        --implant-card-color: rgba(253, 247, 242, 1);
+        --font-weight-normal: 400;
+        --font-weight-bold: 700;
+        --font-size-h2: 40px;
+        --font-size-h1: 50px;
+        --font-size-h3: 20px;
+        --font-size-body: 17px;
+        --margin-top: 5rem;
+        --z-fixed: 100;
+        --z-background: -100;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Lato";
+        color: #333;
+        font-weight: var(--font-weight-normal);
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: var(--body-color);
+        overflow-x: hidden;
+    }
+    /* Reusable classes */
+    
+    b {
+        font-weight: var(--font-weight-bold);
+    }
+    
+    .heading2 {
+        margin: var(--margin-top) 0 3rem;
+        font-size: var(--font-size-h2);
+        text-align: center;
+    }
+    
+    .action-button {
+        font-size: var(--font-size-h3);
+        text-decoration: none;
+        font-weight: var(--font-weight-bold);
+        border: 2px solid var(--primary-color);
+        border-radius: 20px;
+        padding: 18px;
+    }
+    
+    .home {
+        overflow-x: hidden;
+        align-items: center;
+    }
+    /* Root Layout */
+    
+    header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+        padding: 0;
+    }
+    
+    main {
+        margin: 0 0 0 0;
+    }
+    /* navbar */
+    
+    .navbar {
+        overflow-x: hidden;
+        width: auto;
+        height: var(--header-height);
+        display: flex;
+        align-items: center;
+        padding: 0 45px;
+        /* opacity: 50%; */
+        /* margin: 0 auto; */
+        /* justify-content: end; */
+        background-color: var(--navbar-color);
+    }
+    
+    .navbar .logo {
+        margin-right: auto;
+    }
+    
+    .active {
+        color: #5EA9CC;
+    }
+    
+    .navbar .logo img {
+        height: 3.75rem;
+    }
+    
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .disable-scroll {
+        overflow: hidden;
+    }
+    
+    .psuedo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        position: fixed;
+    }
+    
+    .line {
+        width: 40px;
+        height: 5px;
+        background-color: #5EA9CC;
+        margin: 3px;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .links {
+        display: flex;
+        gap: 93px;
+    }
+    
+    .links a {
+        font-size: 23px;
+        text-decoration: none;
+        font-weight: var(--font-weight-bold);
+    }
+    
+    .links a:active {
+        color: var(--primary-color);
+    }
+    
+    .links a:hover {
+        color: var(--primary-color);
+    }
+    
+    .overlay {
+        /* position: fixed; */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overlay-links {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .overlay-links a {
+        text-decoration: none;
+        color: #5EA9CC;
+        font-size: 24px;
+        margin-bottom: 40px;
+        align-content: center;
+    }
+    
+    .close-icon {
+        display: none;
+    }
+    
+    .close-icon img {
+        height: 20px;
+        cursor: pointer;
+    }
+    /* home */
+    
+    .home {
+        /* max-width: 100%; */
+        display: flex;
+        flex-direction: column;
+        /* position: relative; */
+        margin: 20px;
+        overflow-x: hidden;
+    }
+    
+    .ent::before {
+        width: 100%;
+        height: 1100px;
+        top: -50%;
+        margin-left: -20px;
+        background-size: 100% 100%;
+        content: "";
+        background-image: url(/src/img/home_background.jpg);
+        position: absolute;
+        z-index: var(--z-background);
+        opacity: 50%;
+    }
+    
+    .heading {
+        max-width: 406px;
+        font-size: var(--font-size-h1);
+        margin: 3rem 2rem;
+    }
+    
+    .appointment-header {
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+    }
+    
+    .locations-container {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin-top: -150px;
+    }
+    
+    .location-card {
+        display: grid;
+        align-items: center;
+        gap: 2px;
+        padding: 10px 20px;
+        font-size: var(--font-size-body);
+        background-color: var(--seconday-color);
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .location-title::before {
+        content: url(/src/img/Icons/location_icon.svg);
+        margin-right: 5px;
+    }
+    
+    .cochlear-heading {
+        display: flex;
+        justify-content: center;
+        font-size: var(--font-size-h1);
+        margin: 3rem 2rem;
+    }
+    
+    .implant-container {
+        /* margin: var(--margin-top) 1rem 0 1rem; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0rem;
+    }
+    
+    .implant-know-more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .implant-contact {
+        color: #C21C36;
+        font-size: 25px;
+        white-space: nowrap;
+        /* margin: 2rem 0rem; */
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .implant-card {
+        display: grid;
+        max-width: 400px;
+        padding: 60px 60px;
+        gap: 3rem;
+        font-size: var(--font-size-h3);
+        background-color: var(--implant-card-color);
+    }
+    
+    .implant-card h2 {
+        font-size: var(--font-size-h2);
+    }
+    
+    .implant-image {
+        content: url(/src/img/cochlear_implant.png);
+        width: 500px;
+    }
+    
+    .ent-cards-container {
+        display: flex;
+        margin-top: 50px;
+        /* margin: var(--margin-top) 2rem 0; */
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
+    .ent-card {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px;
+        background-color: #5FA9CD;
+        border-radius: 20px;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--font-size-body);
+        gap: 2rem;
+        line-height: 25px;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .ent-card>p {
+        color: #ffffff;
+    }
+    
+    .ent-card h3 {
+        color: #ffffff;
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-h3);
+    }
+    
+    #ent-card-img1 {
+        content: url(/src/img/Icons/ear.svg);
+        height: 150px;
+        width: 150px;
+    }
+    
+    #ent-card-img2 {
+        content: url(/src/img/Icons/nose.svg);
+        height: 150px;
+        width: 150px;
+    }
+    
+    #ent-card-img3 {
+        content: url(/src/img/Icons/throat.svg);
+        width: 150px;
+        height: 150px;
+    }
+    
+    .ent-card-button {
+        padding: 20px;
+        font-size: var(--font-size-h3);
+        background-color: var(--body-color);
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    /* Know your Doctors */
+    
+    .doc-card-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    
+    .doc-card {
+        padding: 40px 30px 30px;
+        display: flex;
+        gap: 60px;
+        background-color: var(--seconday-color);
+        border-radius: 20px;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    #doc-img1 {
+        content: url("./pages/about-page/photos/prayatna.jpeg");
+    }
+    
+    #doc-img2 {
+        content: url("/src/img/vidhi_gupta.png");
+    }
+    
+    #doc-img1,
+    #doc-img2 {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .doc-details {
+        align-items: center;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        white-space: nowrap;
+    }
+    
+    .doc-details .doc-name {
+        font-weight: var(--font-weight-bold);
+        font-size: 22px;
+        width: 100%;
+    }
+    
+    .doc-details ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 19px;
+    }
+    
+    .doc-details ul li span {
+        position: relative;
+        left: 10px;
+        top: -10px;
+    }
+    
+    li.detail1 {
+        list-style-image: url("/src/img/Icons/Graduation_Cap.svg");
+    }
+    
+    li.detail2 {
+        list-style-image: url("/src/img/Icons/Warranty.svg");
+    }
+    
+    li.detail3 {
+        list-style-image: url("/src/img/Icons/Phone.svg");
+    }
+    /* Why Choose Us? */
+    
+    .choose-us-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .choose-us-container>img {
+        content: url("/src/img/why_choose_us.png");
+        width: 530px;
+        height: 530px;
+        margin-left: 50px;
+    }
+    
+    .reasons {
+        display: flex;
+        flex-direction: column;
+        /* display: grid; */
+        row-gap: 2rem;
+        width: auto;
+        margin: 30px;
+        /* min-width: 530px;
+  max-width: 530px; */
+    }
+    
+    .reasons li {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        padding: 10px;
+        border: 1px solid var(--primary-color);
+        border-radius: 20px;
+    }
+    
+    .reasons li::before {
+        content: url("/src/img/Icons/reason_bullets.svg");
+        margin-right: 20px;
+    }
+    
+    .reasons li span {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .reason-header {
+        font-size: var(--font-size-h3);
+    }
+    
+    .appointment-foot {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    /* Reviews */
+    
+    .reviews {
+        margin-top: -200px;
+    }
+    
+    .review-card-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    
+    .review-card {
+        display: grid;
+        gap: 20px;
+        max-width: 350px;
+        background-color: var(--appointment-card-color);
+        border: 1px solid var(--primary-color);
+        border-radius: 20px;
+        padding: 20px 40px;
+    }
+    
+    .review-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .review-card-header h3 {
+        font-size: var(--font-size-h3);
+    }
+    
+    .rating {
+        white-space: nowrap;
+    }
+    
+    .rating img {
+        content: url("/src/img/Icons/star.svg");
+    }
+    
+    .review-content {
+        text-align: justify;
+    }
+    
+    .review-buttons-container {
+        margin: 3rem auto;
+        max-width: 700px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* footer */
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        margin: 20px 50px 0;
+    }
+    
+    @media (max-width:1300px) {
+        #doc-img1,
+        #doc-img2 {
+            width: 150px;
+            height: 150px;
+        }
+        .doc-details {
+            gap: 5px;
+        }
+        .doc-details ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 15px;
+        }
+        .action-button {
+            font-size: 18;
+        }
+    }
+    
+    @media (max-width: 950px) {
+        .navbar {
+            padding: 0px;
+            justify-content: end;
+            width: 100%;
+        }
+        .navbar .logo {
+            margin-right: auto;
+        }
+        .navbar .logo img {
+            margin-left: 20px;
+            height: 3.3rem;
+        }
+        .links {
+            margin-right: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        #doc-img1,
+        #doc-img2 {
+            width: 120px;
+            height: 120px;
+        }
+        .doc-details {
+            gap: 5px;
+            padding: 5px;
+        }
+        .doc-details ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 12px;
+        }
+        .doc-details .doc-name {
+            font-size: 17px;
+            width: 100%;
+        }
+        .rating img {
+            width: 19px;
+            height: 19px;
+        }
+        .review-content {
+            text-align: justify;
+            font-size: 11px;
+        }
+    }
+    
+    @media (max-width: 815px) {
+        body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        .ent::before {
+            max-width: 100%;
+            height: 1050px;
+            background-size: 100% 100%;
+            top: -50%;
+            margin-left: -20px;
+            content: "";
+            background-image: url(/src/img/home_background.jpg);
+            position: absolute;
+            z-index: var(--z-background);
+            opacity: 50%;
+        }
+        .implant-container {
+            flex-direction: column;
+        }
+        .ent-cards-container {
+            flex-direction: column;
+        }
+        .doc-card-container {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .doc-card {
+            width: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        .doc-details {
+            align-items: center;
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            white-space: nowrap;
+        }
+        .doc-details .doc-name {
+            font-weight: var(--font-weight-bold);
+            font-size: 22px;
+            width: 100%;
+        }
+        .doc-details ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-size: 19px;
+            margin-left: 15px;
+        }
+        .choose-us-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .choose-us-container>img {
+            margin: 0;
+            content: url("/src/img/why_choose_us.png");
+            width: 400px;
+            height: 400px;
+        }
+        .reasons {
+            width: 500px;
+        }
+        .review-card-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .home {
+            align-items: normal;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        .navbar .logo img {
+            margin-left: 20px;
+            height: 3rem;
+        }
+        .doc-details {
+            padding: 15px;
+            margin-left: 20px;
+        }
+        .doc-details ul {
+            gap: 0.5rem;
+            font-size: 17px;
+        }
+        .links a {
+            font-size: 18px;
+        }
+    }
+    
+    @media (max-width: 550px) {
+        body {
+            overflow-x: hidden;
+        }
+        .heading>h1 {
+            font-size: 50px;
+            margin-bottom: -20px;
+        }
+        .locations-container {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 20px;
+            gap: 20px
+        }
+        .choose-us-container>img {
+            width: 300px;
+            height: 300px;
+        }
+        .reasons {
+            width: 300px;
+        }
+        .reasons li::before {
+            margin-right: 10px;
+            transform: scale(0.75);
+        }
+        .reason-header {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .reason-description {
+            font-size: 14px;
+        }
+        .cochlear-heading {
+            font-size: 35px;
+        }
+        .hamburger {
+            display: block;
+            justify-content: right;
+            margin: 10px;
+        }
+        .doc-details {
+            padding: 7px;
+        }
+        .links {
+            display: none;
+        }
+        .links.open {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        .overlay-links {
+            display: flex;
+            flex-direction: column;
+        }
+        .overlay {
+            display: none;
+        }
+        .overlay.open {
+            display: flex;
+        }
+        .overlay.open .overlay-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .review-buttons-container {
+            text-align: center;
+            /* white-space: nowrap; */
+            margin: 3rem 0;
+            gap: 10px;
+            max-width: 550px;
+        }
+        .close-icon.open {
+            display: block;
+        }
+        .implant-image {
+            margin-top: 20px;
+            content: url(/src/img/cochlear_implant.png);
+            width: 400px;
+        }
+    }
+    
+    @media (max-width: 430px) {
+        .implant-image {
+            margin-top: 20px;
+            content: url(/src/img/cochlear_implant.png);
+            width: 315px;
+        }
+    }

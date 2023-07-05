@@ -1,0 +1,685 @@
+/* Main Heading ----------------------------------------------------------------------------------------------------------------------- */
+
+.Facilities {
+    margin: 90px 20px;
+    padding: 0;
+}
+
+.main_div {
+    margin: 0;
+    padding: 0;
+}
+
+.heading_fac {
+    display: flex;
+    top: 100px;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #232323;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header_content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.snf_image {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 43px;
+}
+
+.snf_content {
+    /* width: 850px;
+height: 500px; */
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    color: #000000;
+    margin-left: 45px;
+    margin-right: 43px;
+}
+
+.apt_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 263px;
+  height: 70px;
+  background: #7bfdff;
+  border: 2px solid #5ea9cc;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px; */
+}
+
+
+/* 
+#number {
+  width: 171px;
+  height: 24px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #323232;
+} */
+
+
+/* General Facilities --------------------------------------------------------------------------------------------------------*/
+
+.gen_fac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.text_gen {
+    display: flex;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 50px;
+    color: #232323;
+    margin-left: 494.5px;
+}
+
+.text_fac {
+    display: flex;
+    font-family: Lato;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    margin-top: 0px;
+    text-align: left;
+    color: #232323;
+    margin-left: 20px;
+    margin-right: 494.5px;
+}
+
+
+/* Matrix -------------------*/
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+ul.General_Fac_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.General_Fac_list li {
+    position: relative;
+    display: flex;
+    line-height: 24px;
+    padding-left: 25px;
+    margin-top: 25px;
+    width: auto;
+    height: auto;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+}
+
+.General_Fac_list li:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #323232;
+    border-radius: 50%;
+}
+
+
+/* Special Surgery ------------------------------------*/
+
+.sur_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Special_Surgery {
+    display: flex;
+    border-radius: nullpx;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.sp {
+    display: flex;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #232323;
+}
+
+.sur {
+    display: flex;
+    font-family: Lato;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    margin-top: 0px;
+    text-align: left;
+    color: #232323;
+    margin-left: 20px;
+}
+
+
+/* Surgery Box Properties -----------------------------------------------------------------------------------------------------------*/
+
+.all_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 23px;
+}
+
+.box_r1 {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.box_r2 {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+.box0,
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+    /* flex-basis: calc(20% - 20px); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    width: 220px;
+    height: 100px;
+    background: rgba(186, 247, 248, 0.5);
+    border: 0.5px solid rgba(94, 169, 204, 0.5);
+    border-radius: 10px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.box_r1 a,
+.box_r2 a {
+    text-decoration: none;
+}
+
+.box0:hover,
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover,
+.box9:hover {
+    background-color: #5ea9cc;
+}
+
+.box0:hover .asd,
+.box1:hover .asd,
+.box2:hover .asdd,
+.box3:hover .asd,
+.box4:hover .asd,
+.box5:hover .asd,
+.box6:hover .asd,
+.box7:hover .asd,
+.box8:hover .asd,
+.box9:hover .asdd {
+    color: white;
+}
+
+.asd {
+    padding: 38px 20px 38px 20px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #5ea9cc;
+}
+
+.asdd {
+    margin-top: 11px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #5ea9cc;
+}
+
+
+/* Paragraph of every boxes------------------------------------------------------------------------------------------- */
+
+.all_para {
+    display: flex;
+    flex-direction: column;
+}
+
+.details0,
+.details1,
+.details2,
+.details3,
+.details4,
+.details5,
+.details6,
+.details7,
+.details8,
+.details9 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 52.5px;
+}
+
+
+/* Text Property for respective paragraph heading */
+
+.text_prop {
+    display: flex;
+    align-items: center;
+    /* width: 353px;
+height: 29px; */
+    width: auto;
+    height: auto;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0px;
+    margin-left: 59px;
+    white-space: nowrap;
+}
+
+.text_prop p {
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+/* 
+.know_more p {
+  width: 105px;
+  height: 30px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #5ea9cc;
+  white-space: nowrap;
+  margin-right: 59px;
+} */
+
+.know_more a {
+    width: 105px;
+    height: 30px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #5ea9cc;
+    white-space: nowrap;
+    margin-right: 59px;
+    text-decoration: none;
+}
+
+.underline {
+    display: flex;
+    content: "";
+    margin-left: 59px;
+    width: 300px;
+    height: 0px;
+    border: 2px solid #5ea9cc;
+    margin-top: 20px;
+}
+
+.img_coc0,
+.img_coc1,
+.img_coc2,
+.img_coc3,
+.img_coc4,
+.img_coc5,
+.img_coc6,
+.img_coc7,
+.img_coc8,
+.img_coc9 {
+    display: flex;
+    align-items: center;
+}
+
+.img_coc0 img,
+.img_coc1 img,
+.img_coc2 img,
+.img_coc3 img,
+.img_coc4 img,
+.img_coc5 img,
+.img_coc6 img,
+.img_coc7 img,
+.img_coc8 img,
+.img_coc9 img {
+    display: flex;
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+.text_coc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    /* margin-right: 59px;
+  margin-left: 25px; */
+    justify-content: center;
+    flex: 1;
+    width: auto;
+    height: auto;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #323232;
+    margin-top: 40px;
+    align-self: flex-start;
+}
+
+#after_sur {
+    display: flex;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #323232;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+
+/* Appointment box----------------------------------------------------------------------------------------------------------------------- */
+
+.last_apt_box {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    flex-direction: column;
+}
+
+
+/* for phone */
+
+@media (max-width: 768px) {
+    .Facilities {
+        overflow-x: hidden;
+        padding: 0;
+    }
+    /* Heading-------------------------------------------------------------- */
+    .heading_fac {
+        display: flex;
+        /* top: 54px; */
+        font-size: 32px;
+        overflow-x: hidden;
+    }
+    .header_content {
+        /* margin-top: 120px; */
+        display: flex;
+        flex-direction: column;
+    }
+    .snf_image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+    .snf_content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        margin: 20px 13px;
+    }
+    /* General Facilities ----------------------------------- */
+    .gen_fac {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .text_gen {
+        display: flex;
+        font-size: 21px;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .text_fac {
+        display: flex;
+        font-size: 21px;
+        align-items: center;
+    }
+    .matrix {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 0px;
+    }
+    .matrix_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .General_Fac_list li {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .General_Fac_list li:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        background-color: #323232;
+        border-radius: 50%;
+    }
+    /* Special Surgery------------------------------------------- */
+    .sp,
+    .sur {
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+    }
+    .all_box {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .box_r1 {
+        flex-direction: column;
+    }
+    .box_r2 {
+        flex-direction: column;
+    }
+    .box0,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9 {
+        margin: 0, 16px;
+        width: 117.5px;
+        height: 47px;
+        justify-content: left;
+        align-items: center;
+        text-align: left;
+    }
+    .asd,
+    .asdd {
+        font-size: 11px;
+        justify-content: left;
+        text-align: left;
+        margin-top: 0;
+        line-height: 15px;
+    }
+    .all_para {
+        margin: 0 10px;
+    }
+    .details0,
+    .details1,
+    .details2,
+    .details3,
+    .details4,
+    .details5,
+    .details6,
+    .details7,
+    .details8,
+    .details9 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 52.5px;
+    }
+    .text_prop {
+        display: flex;
+        align-items: first baseline;
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .know_more a {
+        text-decoration: none;
+        display: flex;
+        font-size: 10px;
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+    .text_coc {
+        font-size: 15px;
+        margin-right: 0px;
+        left: 0px;
+    }
+    .asdf,
+    .asdfg {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .underline {
+        width: 150px;
+        margin-left: 15px;
+        margin-top: -30px;
+    }
+    .img_coc0,
+    .img_coc1,
+    .img_coc2,
+    .img_coc3,
+    .img_coc4,
+    .img_coc5,
+    .img_coc6,
+    .img_coc7,
+    .img_coc8,
+    .img_coc9 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .img_coc0 img,
+    .img_coc1 img,
+    .img_coc2 img,
+    .img_coc3 img,
+    .img_coc4 img,
+    .img_coc5 img,
+    .img_coc6 img,
+    .img_coc7 img,
+    .img_coc8 img,
+    .img_coc9 img {
+        /* width: 330px;
+    height: 330px; */
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    #after_sur {
+        font-size: 15px;
+    }
+    /* .last_apt_box {
+      display: none;
+  } */
+    .last_apt_box {
+        display: flex;
+    }
+}

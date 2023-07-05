@@ -1,0 +1,609 @@
+.about {
+    display: flex;
+    margin-top: 90px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-right: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url("https://picsum.photos/seed/picsum/1920/400");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    /* margin-bottom: 20px; */
+}
+
+.header>h3 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 64px;
+    line-height: 77.45px;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    margin-bottom: 30px;
+}
+
+
+/* .get-appointment{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 30px;
+    flex-wrap: wrap;
+    
+    background: #F14038;
+    box-shadow: -4px 4px 0px #C21C36;
+    border-radius: 10px;
+}
+
+
+.get-appointment>p{
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+.get-appointment>p#number{
+    font-weight: 400;
+font-size: 40px;
+line-height: 24px;
+} */
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;
+}
+
+.cards-icon-bg {
+    /* position: relative; */
+    width: 100px;
+    height: 100px;
+    content: url('./photos/cards-icon-bg.svg');
+}
+
+.patient-centric-icon {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    content: url("./photos/patient-centric.svg")
+}
+
+.passionate-doctors-icon {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    content: url("./photos/prof-doctors.svg")
+}
+
+.super-spec-icon {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    content: url("./photos/super-speciality.svg")
+}
+
+.card-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -45px;
+}
+
+.card-body {
+    /* height: 250px; */
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #5FA9CD;
+}
+
+.card-content {
+    font-weight: 400;
+    size: 17px;
+    line-height: 25px;
+    padding: 0px 30px 30px 30px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.card-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 60px 83px 23px 83px;
+}
+
+.Expert-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 30px 20px;
+    gap: 30px;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.Expert-cards {
+    padding-bottom: 30px;
+}
+
+.Expert-cards>p {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.Expert-cards>p>b {
+    font-weight: 700;
+}
+
+.doctor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+    width: 688.33px;
+    height: auto;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 30px;
+    justify-content: center;
+}
+
+.photo {
+    height: 250px;
+    width: 92%;
+    content: url("./photos/prayatna.jpeg");
+}
+
+.Expert-bg>p#edu-spec {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.edu-spec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 192px;
+    width: auto;
+    height: auto;
+    background: #BAF7F8;
+    /* background: rgba(217, 217, 217, 0.4); */
+    border-radius: 20px;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 219px;
+    height: 176px;
+}
+
+.edu-icon {
+    width: 30px;
+    height: 30px;
+    content: url('./photos/grad-cap.svg')
+}
+
+.edu-list {
+    display: flex;
+    align-items: center;
+}
+
+.exp-icon {
+    width: 30px;
+    height: 30px;
+    content: url('./photos/exp-icon.svg')
+}
+
+.edu-content,
+.exp-content {
+    padding-left: 10px;
+}
+
+.specialisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialisation>p {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    justify-content: center;
+    text-align: justify;
+    color: #323232;
+    padding-bottom: 20px;
+}
+
+.spec-bg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 45px;
+    width: 358px;
+    height: 130px;
+    background: #5FA9CD;
+    border-radius: 20px;
+}
+
+.spec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    color: #FFFFFF;
+}
+
+.spec-name {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.icon-bg {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    content: url('./photos/icon-bg.svg');
+}
+
+.cochlear-icon {
+    position: absolute;
+    margin-top: 10px;
+    width: 42px;
+    height: 42px;
+    content: url('./photos/ear-ache-black.svg');
+}
+
+.runny-nose-icon {
+    position: absolute;
+    margin-top: 10px;
+    width: 42px;
+    height: 42px;
+    content: url('./photos/runny-nose-black.svg');
+}
+
+.ear-drum-icon {
+    position: absolute;
+    margin-top: 10px;
+    width: 42px;
+    height: 42px;
+    content: url('./photos/head-ache-black.svg');
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.Hospital-facilities-layout {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    overflow: hidden;
+    animation: carousel 30s linear infinite;
+}
+
+.Hospitals-facilities {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.Hospitals {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 30px;
+    gap: 10px;
+    width: 600px;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    scroll-snap-align: start;
+}
+
+.Hospitals:hover {
+    background: rgba(186, 247, 248, 0.5);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.hospital-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232
+}
+
+.hospital-title>p {
+    font-weight: 400;
+    padding-top: 10px;
+    font-size: 17px;
+    line-height: 25px;
+    color: #323232;
+}
+
+.list-of-facilities {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 20px;
+    gap: 40px;
+    color: #323232;
+    list-style-image: url('./photos/Ellipse-6.png');
+}
+
+.hospital-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hospital-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.phone-icon {
+    width: 32px;
+    height: 32px;
+    padding-top: 1px;
+    margin-right: 10px;
+    content: url('./photos/phone.svg');
+    background-size: cover;
+}
+
+.time-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    content: url('./photos/clock.svg');
+}
+
+.hospital-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+
+.hospital-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.hospital-image {
+    width: 300px;
+    height: 300px;
+    background: #D9D9D9;
+    border-radius: 15px;
+}
+
+.add-icon {
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+    content: url('./photos/add-icon.svg');
+    ;
+    background-size: cover;
+}
+
+.hospital-address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 815px) {
+    .header>h3 {
+        font-size: 45px;
+        /* Adjusted font size for screens up to 480px */
+    }
+    .header {
+        gap: 10px;
+    }
+    .card-content {
+        padding: 0px 20px 20x 20px;
+    }
+    .Expert-bg {
+        height: auto;
+        width: auto;
+        padding: 10px;
+        gap: 15px;
+    }
+    .doctor {
+        margin-top: 10px;
+        gap: 20px;
+        width: auto;
+    }
+    .photo {
+        height: 170px;
+        width: 141.67px;
+        background-size: cover;
+    }
+    .description {
+        font-size: 17px;
+        line-height: 25px;
+        height: auto;
+        width: 400px;
+    }
+    .hospital-image {
+        width: 250px;
+        height: 250px;
+    }
+    .Hospitals {
+        padding: 10px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .edu-spec {
+        padding: 15px;
+        gap: 15px;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .header>h3 {
+        line-height: 45px;
+        font-size: 40px;
+        /* Adjusted font size for screens up to 480px */
+    }
+}
+
+@media (max-width: 650px) {
+    .about {
+        justify-content: center;
+    }
+    .get-appointment {
+        padding: 20px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .doctor {
+        gap: 15px;
+    }
+    .description {
+        font-size: 15px;
+        line-height: 22px;
+        height: auto;
+        width: 154px;
+    }
+    .Expert-bg>p#edu-spec {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .edu-spec {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 10px;
+        width: auto;
+        height: auto;
+    }
+    .education {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 200px;
+        height: 172px;
+        margin-top: 10px;
+    }
+    .edu-list {
+        display: flex;
+        align-items: center;
+    }
+    .edu-content {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .spec-bg {
+        padding: 20px;
+        gap: 20px;
+        width: 290px;
+        height: 110px;
+    }
+    .specialisation>p {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        padding-bottom: 10px;
+    }
+    .Hospital-facilities-layout {
+        padding: 20px;
+        gap: 20px;
+    }
+    .hospital-title {
+        line-height: 20px;
+    }
+    .Hospitals {
+        gap: 10px;
+        width: auto;
+    }
+    .hospital-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+    }
+    .add-icon {
+        width: 65px;
+        height: 30px;
+        margin-right: 20px;
+    }
+}
